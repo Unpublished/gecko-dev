@@ -22,7 +22,8 @@ jobs:
           libpulse-dev \
           libx11-xcb-dev \
           nasm
-      - name: Run a multi-line script
+      - name: Run build script
         run: |
+          sed -i -e 's/"r20d"/"r20e"/' python/mozboot/mozboot/android.py
           ./mach create-mach-environment
           ./mach build binaries && ./mach gradle geckoview:publishWithGeckoBinariesDebugPublicationToMavenRepository
