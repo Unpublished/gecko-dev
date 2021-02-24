@@ -24,6 +24,6 @@ jobs:
           nasm
       - name: Run build script
         run: |
-          sed -i -e 's/"r20d"/"r20e"/' python/mozboot/mozboot/android.py
+          sed -i -e 's/"r21d"/"r21e"/' python/mozboot/mozboot/android.py
           ./mach create-mach-environment
           ./mach build binaries && ./mach gradle geckoview:publishWithGeckoBinariesDebugPublicationToMavenRepository
