@@ -17,7 +17,8 @@ jobs:
           libdrm-dev \
           libgtk-3-dev \
           libpango1.0-dev \
-          libpulse-dev
+          libpulse-dev \
+          nasm
       - name: Run a multi-line script
         run: |
           ./mach create-mach-environment
