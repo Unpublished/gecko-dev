@@ -1,0 +1,9 @@
+ac_add_options --enable-application=mobile/android
+ac_add_options --target=aarch64-linux-android
+ac_add_options --with-android-min-sdk=21
+ac_add_options --with-android-ndk="$ANDROID_NDK_HOME"
+ac_add_options --with-android-sdk="$ANDROID_SDK_ROOT"
+ac_add_options CC="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang"
+ac_add_options CXX="$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang++"
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj
+
