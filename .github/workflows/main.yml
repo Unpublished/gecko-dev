@@ -12,4 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run a multi-line script
-        run: ./mach build
+        run: |
+          ./mach create-mach-environment
+          ./mach build
