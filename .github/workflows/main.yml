@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install requirements
         run: |
-          apt-fast install libpulse-dev
+          apt-fast -y install libpulse-dev
       - name: Run a multi-line script
         run: |
           ./mach create-mach-environment
