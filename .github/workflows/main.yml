@@ -20,6 +20,7 @@ jobs:
           libgtk2.0-dev \
           libpango1.0-dev \
           libpulse-dev \
+          libx11-xcb-dev \
           nasm
       - name: Run a multi-line script
         run: |
