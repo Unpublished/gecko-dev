@@ -16,6 +16,7 @@ jobs:
           apt-fast -y install \
           libdrm-dev \
           libgtk-3-dev \
+          libgtk2.0-dev \
           libpango1.0-dev \
           libpulse-dev \
           nasm
