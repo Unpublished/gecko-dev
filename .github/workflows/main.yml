@@ -23,6 +23,7 @@ jobs:
           libx11-xcb-dev \
           nasm
           rustup target add aarch64-linux-android
+          sdkmanager emulator
       - name: Run build script
         run: |
           sed -i -e 's/"r21d"/"r21e"/' python/mozboot/mozboot/android.py
